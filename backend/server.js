@@ -1,7 +1,22 @@
 const express = require("express");
+const connectDB = require("./config/db");
+const { urlNotFound, errorHandler } = require("./middlewares/errorMiddleware");
 const dotenv = require("dotenv").config();
 
+const userRoutes = require("./routes/userRoutes");
+const noteRoutes = require("./routes/noteRoutes");
+
 const app = express();
+
+connectDB();
+
+app.use(express.json());
+
+app.use("/api/users", userRoutes);
+app.use("/api/notes", noteRoutes);
+
+app.use(urlNotFound);
+app.use(errorHandler);
 
 const PORT = process.env.PORT;
 

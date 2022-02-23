@@ -1,0 +1,27 @@
+.mainBackground {
+  min-height: 93vh;
+  display: flex;
+}
+
+.page {
+  width: 100%;
+}
+
+.heading {
+  font-size: 60px;
+  margin-top: 20px;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  .heading {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .heading {
+    font-size: 30px;
+  }
+}
