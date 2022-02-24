@@ -9,13 +9,16 @@ import Register from "./pages/Register/Register";
 import CreateNote from "./pages/CreateNote/CreateNote";
 import UpdateNote from "./pages/UpdateNote/UpdateNote";
 import Profile from "./pages/Profile/Profile";
+import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" element={<Landing />} exact></Route>
+        <Route path="*" element={<NotFound />}></Route>
+
+        <Route path="/" element={<Landing />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/profile" element={<Profile />}></Route>
