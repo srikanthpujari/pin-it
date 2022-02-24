@@ -22,24 +22,34 @@ Pin-It provides you one safe place for all your notes. It is built using MERN st
 
 ### Clone the project
 
+```bash
 git clone https://github.com/srikanthpujari/pin-it.git
+```
 
 ### Go to project directory
 
+```bash
 cd PIN-IT
+```
 
 ### Install dependencies
 
+```bash
 npm install
 cd frontend/
 npm install
+```
 
 ### Start the server
 
+```bash
 npm run start
+```
 
 ### Start the client
 
+```bash
 // Open new terminal
 cd frontend
 npm start
+```
