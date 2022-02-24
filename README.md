@@ -5,9 +5,13 @@ Pin-It provides you one safe place for all your notes. It is built using MERN st
 # Tech Stack
 
 **Client:** ReactJS
+
 **Server:** NodeJS, ExpressJS
+
 **Database:** MongoDB
+
 **Component Library:** React-Bootstrap
+
 **Encryption/Authentication** bcryptJS/JWT
 
 ## Demo
